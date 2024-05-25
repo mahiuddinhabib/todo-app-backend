@@ -1,0 +1,11 @@
+node_modules
+.env
+.vercel
+dist
+
+
+# Remove the below files and folders from project if you are not using them
+src/app/modules/auth
+src/app/modules/feedback
+src/app/modules/otp
+src/app/modules/user
