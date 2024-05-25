@@ -1,19 +1,35 @@
-# Express Mongoose Starter
+# Todo App API
 
-A boilerplate for building RESTful APIs with TypeScript, Express, and Mongoose. This project is a starting point for building full-fledged RESTful APIs with Node.js, Express, and MongoDB. It comes with the following features:
+This is a simple Todo App API built with Express and Mongoose. It provides endpoints to manage todos and users. The API is secured with JWT authentication. The API is built following the MVC architecture.
 
-- **Basic Authentication**: Login and Register endpoints to authenticate users.
-- **Authorization**: Role based access control for routes.
-- **Password Reset**: Send password reset email to users.
-- **Configuration Management**: Different configurations for development and production environments.
-- **Error Handling**: Centralized error handling middleware.
-- **Linting**: Linting with ESLint.
-- **Validation**: Request data validation using Jod.
-- **Pagination**: Paginate through API results.
-- **Sorting**: Sort API results.
-- **Filtering**: Filter API results.
-- **Searching**: Search API results.
-- **Environment Variables**: Environment variables using dotenv.
+## Features
+
+- **Todo Management:**
+    - Create a new todo
+    - Get all todos
+    - Get a single todo
+    - Update a todo
+    - Delete a todo
+
+## Technologies
+
+- **Express:** A fast, unopinionated, minimalist web framework for Node.js.
+- **Mongoose:** A MongoDB object modeling tool designed to work in an asynchronous environment.
+- **JWT:** JSON Web Token is an open standard that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+- **Bcrypt:** A library to help you hash passwords.
+- **Dotenv:** A zero-dependency module that loads environment variables from a `.env` file into `process.env`.
+- **Jod:** A schema description language and data validator for JavaScript objects.
+
+
+## API Endpoints
+
+### Todos
+
+- **GET /tasks:** Get all tasks
+- **POST /tasks:** Create a new task
+- **GET /tasks/:id:** Get a single task
+- **PATCH /tasks/:id:** Update a task
+- **DELETE /tasks/:id:** Delete a task
 
 ## Project Setup
 
@@ -23,13 +39,13 @@ Follow these steps to set up and run the project:
 
     **For Windows:**
     ```bash
-    git clone https://github.com/mahiuddinhabib/express-mongoose-starter.git
+    git clone https://github.com/mahiuddinhabib/todo-app-backend.git
     cd express-mongoose-starter
     ```
 
     **For macOS:**
     ```bash
-    gh repo clone https://github.com/mahiuddinhabib/express-mongoose-starter.git
+    gh repo clone https://github.com/mahiuddinhabib/todo-app-backend.git
     cd express-mongoose-starter
     ```
 
