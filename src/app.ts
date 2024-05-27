@@ -6,7 +6,15 @@ import cookieParser from 'cookie-parser';
 import handleNotFoundError from './errors/handleNotFoundError';
 
 const app: Application = express();
-app.use(cors());
+// app.use(cors());
+const corsOptions = {
+  origin: 'https://todo-app-sigma-green.vercel.app',
+  // origin: 'http://localhost:3000',
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 // Parser
 app.use(cookieParser());
