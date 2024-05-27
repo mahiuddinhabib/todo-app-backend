@@ -1,6 +1,6 @@
 # Todo App API
 
-This is a simple Todo App API built with Express and Mongoose. It provides endpoints to manage todos and users. The API is secured with JWT authentication. The API is built following the MVC architecture.
+This is a simple Todo App API built with Express and Mongoose. It provides endpoints to manage todos. The API is secured with JWT authentication.
 
 ## Features
 
@@ -36,19 +36,17 @@ Follow these steps to set up and run the project:
 
 1. **Clone the repository:**
 
-   **For Windows:**
+    **For Windows:**
+    ```bash
+    git clone https://github.com/mahiuddinhabib/todo-app-backend.git
+    cd todo-app-backend
+    ```
 
-   ```bash
-   git clone https://github.com/mahiuddinhabib/todo-app-backend.git
-   cd todo-app-backend
-   ```
-
-   **For macOS:**
-
-   ```bash
-   gh repo clone https://github.com/mahiuddinhabib/todo-app-backend.git
-   cd todo-app-backend
-   ```
+    **For macOS:**
+    ```bash
+    gh repo clone https://github.com/mahiuddinhabib/todo-app-backend.git
+    cd todo-app-backend
+    ```
 
 2. **Install dependencies using [Yarn](https://yarnpkg.com/):**
 
